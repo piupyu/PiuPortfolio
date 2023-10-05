@@ -1,21 +1,21 @@
-$navbar-bg-color: #000;
-$navbar-text-color: #fff;
-$navbar-hover-color: #FFFF00;
+$black: #000;
+$white: #fff;
+$main-yellow: #FFFF00;
 
 .navbar {
-  background-color: $navbar-bg-color;
-  color: $navbar-text-color;
+  background-color: $black;
+  color: $white;
 
   .navbar-brand,
   .nav-link {
-    color: $navbar-text-color;
+    color: $white;
 
     &:hover,
     &:active {
-      color: $navbar-hover-color;
+      color: $main-yellow;
       text-decoration: underline;
-      text-underline-offset: 30%;
-      text-decoration-color: $navbar-hover-color; // Cor da linha embaixo do texto.
+      text-underline-offset: 2%;
+      text-decoration-color: $main-yellow; // Cor da linha embaixo do texto.
     }
   }
 
