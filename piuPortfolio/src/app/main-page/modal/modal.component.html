@@ -1,0 +1,14 @@
+<div class="modal" [class.is-active]="isActive">
+  <div class="modal-content">
+    <button class="close-btn" (click)="closeModal()">
+      <i class="bi bi-x-circle"></i>
+    </button>
+    <h2>{{ selectedWork?.title }}</h2>
+    <p>{{ selectedWork?.timeframe }}</p>
+    <p>{{ selectedWork?.description }}</p>
+    <div class="modal-footer">
+      <button (click)="previous()">Previous</button>
+      <button (click)="next()">Next</button>
+    </div>
+  </div>
+</div>

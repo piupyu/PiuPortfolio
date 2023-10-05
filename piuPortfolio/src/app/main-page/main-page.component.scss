@@ -48,14 +48,12 @@ $main-blue: #003478 ;
     text-decoration: underline;
     text-underline-offset: 20%;
     text-decoration-color: $main-yellow;
-
   }
 
   h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: $black;
-
   }
 
   p {
@@ -72,7 +70,7 @@ $main-blue: #003478 ;
 }
 
 #skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $black;
   display: flex;
   flex-direction: column;
@@ -82,7 +80,7 @@ $main-blue: #003478 ;
   h1 {
     font-size: 3em;
     margin-bottom: 5%;
-    font-weight: 800;
+      font-weight: 800;
     color: $white;
     text-decoration: underline;
     text-underline-offset: 20%;
@@ -98,13 +96,13 @@ $main-blue: #003478 ;
     font-size: 1.2em;
     font-weight: 700;
 
-
     &:hover {
-      background-color: darken(#FFFF00, 10%);
+      background-color: darken($main-yellow, 10%);
       transform: scale(1.05);
       transition: all 0.3s ease-in-out;
     }
   }
+
   .skill-item {
     margin-bottom: 30px;
   }
@@ -126,4 +124,101 @@ $main-blue: #003478 ;
     font-weight: 500;
     color: $black;
   }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      margin-top: 10% ;
+      margin-bottom: 10% ;
+    }
+
+    .skill-card {
+      padding: 10%;
+    }
+
+    .skill-item {
+      margin-bottom: 15px;
+    }
+
+    .bar-container {
+      height: 20px;
+    }
+
+    .percentage {
+      font-size: 0.8em;
+    }
+
+  }
 }
+
+#work-experience {
+  background-color: $white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 5%;
+    font-weight: 800;
+    color: $main-blue;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    text-decoration-color: $main-yellow;
+  }
+
+  .work-card {
+    background-color: $main-blue;
+    color: $white;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+
+    &:hover {
+      background-color: darken($main-blue, 10%);
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .work-item {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 992px) {
+
+    .work-card {
+      padding: 15px;
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .work-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      margin-top: 30% ;
+      margin-bottom: 10% ;
+    }
+  }
+}
+
+

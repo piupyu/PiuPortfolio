@@ -46,7 +46,7 @@
   <div class="container text-center">
     <h1>Skills</h1>
     <div class="row">
-      <div class="col-lg-4 col-md-6 skill-item" *ngFor="let skill of skills">
+      <div class="col-lg-4 col-md-6 col-sm-12 skill-item" *ngFor="let skill of skills">
         <div class="skill-card">
           {{ skill.name }}
           <div class="bar-container">
@@ -58,3 +58,45 @@
     </div>
   </div>
 </section>
+
+<section id="work-experience">
+  <div class="container text-center">
+    <h1>Work Experience</h1>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-lg-6 col-md-12 work-item" (click)="openModal(0)">
+        <div class="work-card">
+          <h2>Software Engineer Internship</h2>
+          <p>Setember 2022 -- May 2023</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-6 col-md-12 work-item" (click)="openModal(1)">
+        <div class="work-card">
+          <h2>Software Engineer Junior</h2>
+          <p>May 2023 -- Present</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-lg-6 col-md-12 work-item" (click)="openModal(2)">
+        <div class="work-card">
+          <h2>Scrum Master and Product Designer</h2>
+          <p>February 2023 -- November 2023</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-6 col-md-12 work-item" (click)="openModal(3)">
+        <div class="work-card">
+          <h2>Ux Desing and Requirements Analyst</h2>
+          <p>February 2022 -- November 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-modal [workExperiences]="workExperiences"
+           [isActive]="isModalActive"
+           [initialIndex]="selectedWorkIndex"
+           (closeModalEvent)="closeModal()"></app-modal>
+</section>
+
+
