@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ModalComponent } from './main-page/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MainPageComponent
+    MainPageComponent,
+    ModalComponent
   ],
   imports: [
     BrowserAnimationsModule,
