@@ -1,0 +1,22 @@
+$navbar-bg-color: #000;
+$navbar-text-color: #fff;
+$navbar-hover-color: #FFFF00;
+
+.navbar {
+  background-color: $navbar-bg-color;
+  color: $navbar-text-color;
+
+  .navbar-brand,
+  .nav-link {
+    color: $navbar-text-color;
+
+    &:hover,
+    &:active {
+      color: $navbar-hover-color;
+      text-decoration: underline;
+      text-underline-offset: 30%;
+      text-decoration-color: $navbar-hover-color; // Cor da linha embaixo do texto.
+    }
+  }
+
+}
