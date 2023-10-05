@@ -19,10 +19,10 @@ $main-yellow: #FFFF00;
     border-radius: 10px;
     position: relative;
     color: #fff;
-    width: 70%; // Define a largura do modal
-    max-width: 500px;
-    height: auto; // Define a altura do modal como automática
-    max-height: 80%;
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    max-height: 90%;
     overflow-y: auto;
   }
 
@@ -51,17 +51,17 @@ $main-yellow: #FFFF00;
     margin-top: 20px;
 
     button {
-      background-color: #001d42; // a cor de fundo do botão
-      color: #fff; // a cor do texto do botão
+      background-color: #001d42;
+      color: #fff;
       border: none;
-      padding: 10px 20px; // espaçamento interno do botão
-      border-radius: 5px; // cantos arredondados do botão
-      cursor: pointer; // cursor de ponteiro ao passar o mouse
-      transition: background-color 0.3s ease; // animação suave de cor de fundo
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
 
       &:hover,
       &:focus {
-        background-color: $main-yellow; // cor de fundo do botão ao passar o mouse ou focar
+        background-color: $main-yellow;
         color: #000;
       }
     }
